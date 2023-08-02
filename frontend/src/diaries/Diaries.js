@@ -17,6 +17,9 @@ const Diaries = () => {
       padding={3}
       justifyContent="center"
       alignItems={"center"}
+      sx={{
+        backgroundColor: "whitesmoke",
+      }}
     >
       {" "}
       {posts &&

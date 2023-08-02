@@ -10,9 +10,9 @@ const Header = () => {
 
   const [value, setValue] = useState();
   return (
-    <AppBar sx={{ bgcolor: "transparent", position: "sticky" }}>
+    <AppBar sx={{ bgcolor: "black", position: "sticky" }}>
       <Toolbar>
-        <ModeOfTravelIcon sx={{ color: "black" }} />
+        <h1>Best Blog App</h1>
 
         <Tabs
           value={value}
@@ -29,7 +29,9 @@ const Header = () => {
                     ":hover": {
                       textDecoration: "underline",
                       textUnderlineOffset: "18px",
+                      color: "red",
                     },
+                    color: "white",
                   }}
                   key={link}
                   label={link}
@@ -45,6 +47,7 @@ const Header = () => {
                       textDecoration: "underline",
                       textUnderlineOffset: "18px",
                     },
+                    color: "white",
                   }}
                   key={link}
                   label={link}

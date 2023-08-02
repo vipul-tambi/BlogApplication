@@ -13,7 +13,7 @@ import { Box } from "@mui/system";
 import EditLocationAltIcon from "@mui/icons-material/EditLocationAlt";
 import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { postDelete } from "../api-helpers/helpers";
@@ -41,6 +41,7 @@ const DiaryItem = ({
       .catch((err) => console.log(err));
     setOpen(true);
   };
+
   return (
     <Card
       sx={{

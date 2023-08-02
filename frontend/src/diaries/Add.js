@@ -37,11 +37,8 @@ const Add = () => {
           variant="h4"
           fontFamily={"dancing script"}
         >
-          Add Your Travel Diary
+          Add Your Story
         </Typography>
-        <TravelExploreIcon
-          sx={{ fontSize: "40px", paddingLeft: 1, color: "lightcoral  " }}
-        />
       </Box>
       <form onSubmit={handleSubmit}>
         <Box
